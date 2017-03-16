@@ -53,13 +53,23 @@ int main() {
         printf("\n");
     }
     
-    /*if (m==q && n==p) {
-        
-        for(int i=0;i<m)
+    if (m==q && n==p) {
+        printf("Matrix Multiplication:\n");
+        for(int i=0;i<m;i++)
+        {
+            for (int j=0; j<m; j++) {
+                int sum = 0;
+                for (int k=0; k<n; k++) {
+                    sum += arr1[i][k]*arr1[k][j];
+                }
+                printf("%d ",sum);
+            }
+            printf("\n");
+        }
     }
     else
     {
         printf("Matrix multiplication is not possible as the dimensions of the matrices do not match.");
-    }*/
+    }
     return 0;
 }
