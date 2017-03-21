@@ -13,18 +13,10 @@
 #define MAXSIZEOFSTR2 10
 int main(int argc, const char * argv[]) {
     char str1[MAXSIZEOFSTR1],str2[MAXSIZEOFSTR2];
-    int size,i;
     printf("Enter a string: ");
     scanf("%s",str1);
-    for (size=0; str1[size]!=0; size++);
     
-    if (size>=MAXSIZEOFSTR2)
-        return 1;
-    
-    for(i=0;i<=size;i++)
-    {
-        str2[i]=str1[i];
-    }
+    strcpy(str2, str1);
     
     printf("The contents of str2 are %s.\n",str2);
     return 0;

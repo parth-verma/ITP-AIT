@@ -7,13 +7,12 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 
 int main() {
     char str[10];
-    int size = 0;
     printf("Enter a string: ");
     scanf("%s",str);
-    for(size=0;str[size]!='\0';size++);
-    printf("Size of given string is %d.\n",size);
+    printf("Size of given string is %lu.\n",strlen(str));
     return 0;
 }

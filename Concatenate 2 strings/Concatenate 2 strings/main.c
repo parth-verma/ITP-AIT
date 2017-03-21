@@ -7,24 +7,16 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, const char * argv[]) {
-    char str1[10], str2[10],str3[20];
-    int i,j;
-    
+    char str1[10], str2[10];
     printf("Enter 1st string: ");
     scanf("%s",str1);
     
     printf("Enter 2nd string: ");
     scanf("%s",str2);
     
-    for(i=0,j=0;str1[i]!='\0';i++,j++)
-    {
-        str3[j]=str1[i];
-    }
-    for (i=0; str2[i]!='\0'; i++,j++) {
-        str3[j]=str2[i];
-    }
-    printf("The resultant string is %s.\n",str3);
+    printf("The resultant string is %s.\n",strcat(str1,str2));
     return 0;
 }
