@@ -53,7 +53,7 @@ int main(int argc, const char * argv[]) {
         printf("Element does not exist in the array.\n");
     }
     else
-        printf("Element found in the array.\n");
+        printf("Element found in the array at position %d.\n",mid+1);
 
     return 0;
 }
